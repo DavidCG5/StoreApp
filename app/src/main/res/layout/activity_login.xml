@@ -23,10 +23,11 @@
         tools:ignore="ExtraText" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogin"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/yellow"
+        android:onClick="iniciar"
         android:text="Ingresar"
         android:textAlignment="center"
         android:textColor="@color/darkBlue"
@@ -38,34 +39,34 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644" />
+        app:layout_constraintVertical_bias="0.638" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
-        android:layout_width="300dp"
+        android:id="@+id/etPassword"
+        android:layout_width="350dp"
         android:layout_height="40dp"
-        android:background="@color/white"
+        android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:hint="Contraseña"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/overlay"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintVertical_bias="0.049" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="300dp"
+        android:id="@+id/etEmail"
+        android:layout_width="350dp"
         android:layout_height="40dp"
-        android:background="@color/white"
+        android:background="@drawable/rounded_edittext_background"
         android:ems="10"
         android:hint="Correo electronico"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/overlay"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.444" />
@@ -141,6 +142,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.899" />
+
+    <Button
+        android:id="@+id/btnLoginGoogle"
+        android:drawableStart="@drawable/ic_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B4B3B3"
+        android:text="Inicia sesión con google"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.491" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
