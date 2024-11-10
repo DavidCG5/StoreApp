@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
             Usuario("guest@example.com", "guest123", "user")
         )
 
-        // Lógica para inicio de sesión normal
+        // Lógica para ifnicio de sesión normal
         loginButton.setOnClickListener {
             val email = emailEditText.text.toString().trim()
             val password = passwordEditText.text.toString().trim()
